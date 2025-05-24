@@ -1,0 +1,232 @@
+.previous:hover, .next:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous, .next{
+  background-color: #f1f1f1;
+  color: black;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.round {
+  border-radius: 50%;
+}
+.pagination>li {
+	display: inline;
+	padding:0px !important;
+	margin:0px !important;
+	border:none !important;
+}
+iframe
+{
+	height:700px !important;
+}
+
+@media print
+{    
+	.no-print, .no-print *
+	{
+		display: none !important;
+	}
+}
+
+html{
+	position: relative;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+body{
+	padding:0;
+	margin: 0;
+	background: #e8e8e8;
+	overflow-x: hidden;
+}
+@font-face {
+	font-family: myFont;
+	src: url(fonts/poppins/Poppins-Regular.ttf);
+}
+
+.navbar{
+	box-shadow: 0 0 15px #A9A9A9;
+}
+
+#wrapper {
+	padding-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	overflow-x: hidden;
+}
+
+#wrapper.toggled {
+	padding-left: 250px;
+}
+
+#sidebar-wrapper {
+	position: fixed;
+	left: 250px;
+	width: 0;
+	height: 100%;
+	margin-left: -250px;
+	overflow-y: auto;
+	box-shadow: 0 0 15px #A9A9A9;
+	background: #F8F8F8;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	overflow-x: hidden;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+	width: 250px;
+}
+
+#page-content-wrapper {
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+	position: absolute;
+	margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+	color: #616161;
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #5a8dee;
+}
+
+.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #000;
+	background: rgba(255,255,255,255);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	margin-top: 30px;
+	margin-right: 25px;
+	font-size: 15px;
+	color: #5a8dee;
+}
+
+.navbar-brand{
+	<!--color: #5a8dee !important;-->
+}
+
+.sidebar-nav > .sidebar-brand a {
+	color: #5a8dee;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+	color: #000;
+	background: none;
+}
+@media(min-width:768px) {
+	#wrapper {
+		padding-left: 250px;
+	}
+
+	#wrapper.toggled {
+		padding-left: 0;
+	}
+
+	#sidebar-wrapper {
+		width: 250px;
+	}
+
+	#wrapper.toggled #sidebar-wrapper {
+		width: 0;
+	}
+
+	#page-content-wrapper {
+		padding: 20px;
+		position: relative;
+	}
+
+	#wrapper.toggled #page-content-wrapper {
+		position: relative;
+		margin-right: 0;
+	}
+}
+.logout{
+	display: none;
+}
+.sidebar-button{
+	display: none;
+}
+.text-header:after{
+	content: 'Faculty Evaluation System (FES)';
+}
+@media only screen and (max-width: 768px) {
+	.nav{
+		display: none;
+	}
+	.logout{
+		display: block;
+	}
+	.sidebar-button{
+		display: block;
+	}
+	.text-header:after{
+		content: 'FES';
+	}
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	border-radius: 10px;
+}
+.container{
+	box-shadow: 0 0 15px #A9A9A9;
+	border-radius: 3px;
+	background:#f7f7f7;
+	color: #616161;
+}
+@page { 
+	size: A4 
+}
+.modal-header {
+	padding:9px 15px;
+	background-color: #0480be;
+	color: #fff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+}
